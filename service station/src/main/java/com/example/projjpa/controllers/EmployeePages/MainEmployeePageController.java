@@ -2,7 +2,6 @@ package com.example.projjpa.controllers.EmployeePages;
 
 import com.example.projjpa.models.Employee;
 import com.example.projjpa.models.Job;
-import com.example.projjpa.services.employee.EmployeeService;
 import com.example.projjpa.services.job.JobService;
 import com.example.projjpa.services.util.UtilService;
 import lombok.AllArgsConstructor;
@@ -10,8 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @AllArgsConstructor
 @Controller

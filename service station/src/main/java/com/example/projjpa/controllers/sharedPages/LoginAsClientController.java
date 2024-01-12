@@ -1,15 +1,11 @@
 package com.example.projjpa.controllers.sharedPages;
 
 import com.example.projjpa.models.Client;
-import com.example.projjpa.repos.ClientJpaRepo;
 import com.example.projjpa.services.client.ClientService;
 import com.example.projjpa.services.util.UtilService;
 
-import jakarta.servlet.http.HttpSession;
 import lombok.AllArgsConstructor;
-import lombok.Setter;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

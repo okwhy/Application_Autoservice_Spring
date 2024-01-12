@@ -10,7 +10,6 @@ import com.example.projjpa.services.order.OrderService;
 import com.example.projjpa.services.parts.orders.PartsInOrdersService;
 import com.example.projjpa.services.parts.warehouse.PartsInWarehouseService;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

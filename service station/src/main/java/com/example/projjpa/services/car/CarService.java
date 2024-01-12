@@ -5,7 +5,6 @@ import com.example.projjpa.models.Client;
 import com.example.projjpa.models.Order;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.List;
 import java.util.Set;
 
 public interface CarService {

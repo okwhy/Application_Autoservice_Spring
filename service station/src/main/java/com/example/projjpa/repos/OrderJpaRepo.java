@@ -1,6 +1,5 @@
 package com.example.projjpa.repos;
 
-import com.example.projjpa.models.Job;
 import com.example.projjpa.models.Order;
 
 import java.util.List;

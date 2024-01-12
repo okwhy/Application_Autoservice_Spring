@@ -1,10 +1,6 @@
 package com.example.projjpa.controllers.managerPages;
 
-import com.example.projjpa.services.hangarplace.HangarService;
-import com.example.projjpa.services.job.JobService;
 import com.example.projjpa.services.order.OrderService;
-import com.example.projjpa.services.parts.orders.PartsInOrdersService;
-import com.example.projjpa.services.parts.warehouse.PartsInWarehouseService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

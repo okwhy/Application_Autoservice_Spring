@@ -1,7 +1,6 @@
 package com.example.projjpa.services.util;
 
 import jakarta.servlet.http.HttpSession;
-import jakarta.websocket.Session;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;

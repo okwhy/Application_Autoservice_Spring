@@ -1,8 +1,6 @@
 package com.example.projjpa.services.parts.orders;
 
 import com.example.projjpa.models.PartsInOrders;
-import com.example.projjpa.models.PartsInWarehouse;
-import com.example.projjpa.repos.PartsInOrderJpaRepo;
 
 public interface PartsInOrdersService {
     boolean add(PartsInOrders parts);
