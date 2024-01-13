@@ -20,8 +20,10 @@ services:
       - ./service station/db/mssql/database.sql:/db-init.sql
     healthcheck:
       test: ["CMD","/opt/mssql-tools/bin/sqlcmd", "-Uadmin2", "-PSomeStrongPwd124", "-Q", "select 1"]
-      interval: 1s
+      start_period: 30s
+      interval: 5s
       retries: 20
+
   app:
     build: Service Station/
     ports:
