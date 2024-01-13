@@ -25,7 +25,7 @@ Then the application can be started by using IDE. By default it will be availabl
 
 Just run `docker-compose up` command in the root directory and after successful start of services visit http://localhost:8080/.
 
-##Config
+## Config
 
 ### Backend
 ```shell
