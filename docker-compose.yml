@@ -6,13 +6,10 @@ services:
     image: mcr.microsoft.com/mssql/server:2019-latest
     user: root
     command: /bin/bash /entrypoint.sh
-    environment:
-      ACCEPT_EULA: Y
-      SA_PASSWORD : SomeStrongPwd123
-      PID : Express
-      DATABASE : CarService
-    ports:
-      - 1433:1433
+    env_file:
+      - mssql.env
+    networks:
+      - net
     volumes:
       - dbdata:/var/opt/mssql/data
       - ./service station/db/mssql/docker-entrypoint.sh:/entrypoint.sh
@@ -25,16 +22,20 @@ services:
       retries: 20
 
   app:
+
     build: Service Station/
     ports:
       - "8080:8080"
+    networks:
+      - net
     depends_on:
       mssql:
         condition: service_healthy
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:sqlserver://mssql:1433;encrypt=false;database=CarService;trustServerCertificate=true;
-      SPRING_DATASOURCE_USERNAME: admin2
-      SPRING_DATASOURCE_PASSWORD: SomeStrongPwd124
+    env_file:
+      - env.env
 
+networks:
+  net:
+    driver: bridge
 volumes:
   dbdata:
